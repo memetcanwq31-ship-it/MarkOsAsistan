@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkOS Asistan v26.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="topbar">
+        <div>
+            <div class="logo">⚡ MarkOS</div>
+            <div class="version">Asistan v26.0</div>
+        </div>
+
+        <div class="status">
+            <span class="dot"></span>
+            ONLINE
+        </div>
+    </header>
+
+    <main id="chat">
+
+        <div class="welcome">
+            <div class="welcome-logo">⚡</div>
+
+            <h1>MarkOS Asistan</h1>
+
+            <p>
+                Merhaba. Ben MarkOS Asistan v26.0.
+            </p>
+
+            <div class="quick-buttons">
+                <button onclick="quickMessage('Merhaba MarkOS')">
+                    Merhaba
+                </button>
+
+                <button onclick="quickMessage('Kod yazmama yardım et')">
+                    Kod Yardımı
+                </button>
+
+                <button onclick="quickMessage('MarkOS hakkında bilgi ver')">
+                    MarkOS
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="input-area">
+
+        <div class="input-box">
+
+            <textarea
+                id="message"
+                rows="1"
+                placeholder="MarkOS Asistan'a mesaj yaz..."
+                onkeydown="handleKey(event)"
+            ></textarea>
+
+            <button
+                class="send"
+                onclick="sendMessage()"
+                aria-label="Gönder">
+                ➤
+            </button>
+
+        </div>
+
+        <div class="footer">
+            MarkOS Asistan • v26.0
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
